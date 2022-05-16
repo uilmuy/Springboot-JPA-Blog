@@ -1,7 +1,37 @@
+ 
+server:
+  port: 8080
+  servlet:
+    context-path: /blog
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+#static폴더 에서는 브라우져에서 읽을 수 있는 파일만 로딩됨    
 spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+      
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://192.168.10.4:4754/blog?serverTimezone=Asia/Seoul
     username: webcon
     password: zetz1052 
     
+  jpa:
+    open-in-view: true
+    hibernate:
+      ddl-auto: create  #create테이블 만들기 update 값 업데이트 
+      naming:
+       physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl #테이블을 만들때 변수명 그래도 필드를 만든다랑 이야기
+       #physical-strategy: org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy # eMail로 변수를 만들면 필드는e_mail로 만들다.
+      use-new-id-generator-mappings: false  #jpa가 사용하는 기본 넘버링 전략을 따라가지 않고 mysql의 넘버링 전략을 따라 가겠다.
+    show-sql: true  #콘솔창에 보이게
+    properties:
+      hibernate.format_sql: true # 콘솔창에 이쁘게 보이게
+
+  jackson:
+    serialization:
+      fail-on-empty-beans: false
