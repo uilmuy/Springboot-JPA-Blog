@@ -21,9 +21,9 @@ spring:
     password: zetz1052 
     
   jpa:
-    open-in-view: true
+    open-in-view: true    #Lazy 로딩이 가능해 진다.
     hibernate:
-      ddl-auto: create  #create테이블 만들기 update 값 업데이트 
+      ddl-auto: update  #create테이블 만들기 update 값 업데이트 
       naming:
        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl #테이블을 만들때 변수명 그래도 필드를 만든다랑 이야기
        #physical-strategy: org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy # eMail로 변수를 만들면 필드는e_mail로 만들다.
