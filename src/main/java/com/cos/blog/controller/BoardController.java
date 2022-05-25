@@ -33,14 +33,19 @@ public class BoardController {
 	@GetMapping("/board/{id}")
 	public String findById(@PathVariable int id, Model model) {
 		model.addAttribute("board",boardService.글상세보기(id));
-		return "board/detail";
+		return "board/detail"; //jsp호출
+	}
+	@GetMapping("/board/{id}/updateForm")
+	public String updateForm(@PathVariable int id,Model model) {
+		model.addAttribute("board",boardService.글상세보기(id));
+		return "board/updateForm"; //jsp호출
 	}
 	
 	//유저 권한 필요
 	@GetMapping("/board/saveForm")
 	public String saveForm() {
 		
-		return "board/saveForm";
-		
+		return "board/saveForm"; //jsp호출
 	}
+		
 }

@@ -28,7 +28,7 @@ spring:
        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl #테이블을 만들때 변수명 그래도 필드를 만든다랑 이야기
        #physical-strategy: org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy # eMail로 변수를 만들면 필드는e_mail로 만들다.
       use-new-id-generator-mappings: false  #jpa가 사용하는 기본 넘버링 전략을 따라가지 않고 mysql의 넘버링 전략을 따라 가겠다.
-    show-sql: true  #콘솔창에 보이게
+    show-sql: false  #콘솔창에 쿼리문 보이게 true
     properties:
       hibernate.format_sql: true # 콘솔창에 이쁘게 보이게
 
