@@ -4,23 +4,23 @@
 
 <div class="container">
 
-	<form>
+	<form action="/auth/loginProc" method="post">
 		<div class="form-group">
-			<label for="username">User name:</label> <input type="text" class="form-control" placeholder="Enter username" id="username">
+			<label for="username">User name:</label> 
+			<input type="text" name="username" class="form-control" placeholder="Enter username" id="username">
 		</div>
 		<div class="form-group">
-			<label for="password">password:</label> <input type="password" class="form-control" placeholder="Enter password" id="password">
+			<label for="password">password:</label> 
+			<input type="password" name="password" class="form-control" placeholder="Enter password" id="password">
 		</div>
-		<div class="form-group form-check">
-			<label class="form-check-label"> <input class="form-check-input" type="checkbox"> Remember me
-			</label>
-		</div>
+		
+		<button type="submit" id="btn-login" class="btn btn-primary">로그인</button>
 	</form>
-	<button id="btn-login" class="btn btn-primary">로그인</button>
+	
 
 </div>
 
-<script src="/blog/js/user.js" type="text/javascript">
+<!-- <script src="/js/user.js" type="text/javascript"> 자바 스크립트를 사용하여 로그인을 사용하지 않기 때문에 버튼도 폼 안으로 넣었음
 
-</script>
+</script>-->
 <%@ include file="../layout/footer.jsp"%>

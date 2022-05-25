@@ -39,7 +39,7 @@ public class Board {
 	@Lob //대용량 데이터
 	private String content; //내용이 길수 있어서 섬머노트라는 라이브러리를 사용 <html>태그가 썪여 디자인 됨.
 	
-	@ColumnDefault("0")
+	
 	private int count;
 	
 	@ManyToOne   //board(many)to User(One) 한명의 유저는 여러개의 게시글을 쓸 수 있다.
