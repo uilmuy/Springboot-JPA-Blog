@@ -1,0 +1,171 @@
+{
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter.notebook.ipynb"
+  },
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
+  "redhat.telemetry.enabled": true,
+  "settingsSync.ignoredSettings": [
+    "-maven.executable.path"
+  ],
+  "workbench.iconTheme": "material-icon-theme",
+  "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx1G -Xms100m -javaagent:\"c:\\Users\\uilmu\\.vscode\\extensions\\gabrielbb.vscode-lombok-1.0.1\\server\\lombok.jar\"",
+  "editor.detectIndentation": false,
+  "editor.tabSize": 2,
+  "bracketPairColorizer.depreciation-notice": false,
+  "editor.fontFamily": "D2Coding , 'Courier New', monospace",
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "html.format.indentInnerHtml": true,
+  "html.format.wrapLineLength": 0,
+  "cSpell.userWords": [
+    "insertid",
+    "Mybatisxml",
+    "servlet",
+    "springframework"
+  ],
+  "cSpell.diagnosticLevel": "Hint",
+  "typescript.locale": "ko",
+  "[xml]": {
+    "editor.defaultFormatter": "redhat.vscode-xml"
+  },
+  "editor.wordWrapColumn": 120,
+  "editor.wordWrap": "on",
+  "editor.fontSize": 16,
+  "yaml.customTags": [
+    "!And",
+    "!And sequence",
+    "!If",
+    "!If sequence",
+    "!Not",
+    "!Not sequence",
+    "!Equals",
+    "!Equals sequence",
+    "!Or",
+    "!Or sequence",
+    "!FindInMap",
+    "!FindInMap sequence",
+    "!Base64",
+    "!Join",
+    "!Join sequence",
+    "!Cidr",
+    "!Ref",
+    "!Sub",
+    "!Sub sequence",
+    "!GetAtt",
+    "!GetAZs",
+    "!ImportValue",
+    "!ImportValue sequence",
+    "!Select",
+    "!Select sequence",
+    "!Split",
+    "!Split sequence"
+  ],
+  "yaml.validate": false,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "maven.executable.path": "C:\\Program Files\\Java\\apache-maven-3.8.4\\bin\\mvn.cmd",
+  "java.configuration.maven.userSettings": "C:\\Program Files\\Java\\apache-maven-3.8.4\\conf\\settings.xml",
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx"
+  },
+  "[java]": {
+    "editor.suggest.snippetsPreventQuickSuggestions": false
+  },
+  "editor.formatOnSave": true,
+  "editor.minimap.maxColumn": 140,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "java.jdt.ls.java.home": "",
+  "java.home": "C:\\Program Files\\Java\\jdk1.8.0_321",
+  "java.compile.nullAnalysis.nonnull": [
+    "javax.annotation.Nonnull",
+    "org.eclipse.jdt.annotation.NonNull",
+    "org.springframework.lang.NonNull"
+  ],
+  "boot-java.rewrite.reconcile": true,
+  "cSpell.languageSettings": [],
+  "workbench.colorCustomizations": {
+    "terminal.background": "#182818",
+    "terminal.foreground": "#D8D8D8",
+    "terminalCursor.background": "#D8D8D8",
+    "terminalCursor.foreground": "#D8D8D8",
+    "terminal.ansiBlack": "#181818",
+    "terminal.ansiBlue": "#7CAFC2",
+    "terminal.ansiBrightBlack": "#585858",
+    "terminal.ansiBrightBlue": "#7CAFC2",
+    "terminal.ansiBrightCyan": "#86C1B9",
+    "terminal.ansiBrightGreen": "#A1B56C",
+    "terminal.ansiBrightMagenta": "#BA8BAF",
+    "terminal.ansiBrightRed": "#AB4642",
+    "terminal.ansiBrightWhite": "#F8F8F8",
+    "terminal.ansiBrightYellow": "#F7CA88",
+    "terminal.ansiCyan": "#86C1B9",
+    "terminal.ansiGreen": "#A1B56C",
+    "terminal.ansiMagenta": "#BA8BAF",
+    "terminal.ansiRed": "#AB4642",
+    "terminal.ansiWhite": "#D8D8D8",
+    "terminal.ansiYellow": "#F7CA88"
+  },
+  "editor.stickyScroll.enabled": true,
+  "liveServer.settings.donotVerifyTags": true,
+  "editor.accessibilitySupport": "off",
+  "java.debug.settings.console": "internalConsole",
+  "editor.defaultFormatter": "redhat.java",
+  "workbench.colorTheme": "Jetbrains Fleet",
+  "editor.fontWeight": "normal",
+  "editor.lineHeight": 1.5,
+  "java.completion.favoriteStaticMembers": [
+    "org.junit.Assert.*",
+    "org.junit.Assume.*",
+    "org.junit.jupiter.api.Assertions.*",
+    "org.junit.jupiter.api.Assumptions.*",
+    "org.junit.jupiter.api.DynamicContainer.*",
+    "org.junit.jupiter.api.DynamicTest.*",
+    "org.mockito.Mockito.*",
+    "org.mockito.ArgumentMatchers.*",
+    "org.mockito.Answers.*",
+    "org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*", //내가 추가
+    "org.springframework.test.web.servlet.result.MockMvcResultMatchers.*", //내가 추가
+    "org.assertj.core.api.Assertions.*", //내가 추가
+  ],
+  "git.ignoreMissingGitWarning": true,
+  "react-native-tools.showUserTips": false,
+  "liveServer.settings.port": 0,
+  "javascript.format.enable": false,
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "eslint.validate": [
+    {
+      "language": "javascript"
+    },
+    {
+      "language": "html"
+    },
+  ],
+  "vim.useSystemClipboard": true,
+  "files.associations": {
+    "*.jsp": "jsp"
+  },
+  "editor.codeActionsOnSave": {},
+  "python.languageServer": "Pylance",
+  "python.autoComplete.addBrackets": true,
+  "python.linting.pycodestyleArgs": [
+    "torch"
+  ],
+}
