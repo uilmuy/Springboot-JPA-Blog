@@ -1,0 +1,11 @@
+$(document).ready(function() {
+  $('#check-button').click(function() {
+    var macAddress = $('input[name="macAddress"]').val();
+    var macAddressRegex = /^([0-9A-Fa-f]{2}[:-]){5}([0-9A-Fa-f]{2})$/;
+    
+    if (!macAddressRegex.test(macAddress)) {
+      alert('Invalid MAC address format');
+      return false;
+    }
+  });
+});
